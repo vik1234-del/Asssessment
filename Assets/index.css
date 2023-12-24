@@ -1,0 +1,118 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.information {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /*  height to 100% to take the full height */
+}
+
+.center-text {
+  margin-top: 200px;
+  margin-bottom: auto;
+}
+
+form {
+  margin-top: 50px;
+  margin-right: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  font-size: 13px;
+  /* border-color: #2ec4b6; */
+}
+
+.form input[type="submit"] {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #2ec4b6;
+}
+
+.additional-form-elements {
+  grid-column: span 2;
+  margin: -20px 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Add styles for the p tag */
+.additional-form-elements p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Pro:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Sofia Pro", sans-serif;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+.additional-form-elements .highlight-word {
+  color: #2ec4b6; /* Color for the highlighted word */
+  text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 375px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .information {
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .logo {
+    width: 30px; /* Adjust the width for smaller screens */
+    height: auto;
+    top: 10px;
+    left: 10px;
+  }
+
+  .form {
+    margin: 0px;
+  }
+}
