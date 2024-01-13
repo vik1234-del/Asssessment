@@ -94,25 +94,21 @@ a {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 375px) {
-  .container {
+@media (max-width: 480px) {
+  /* Styles for smaller screens */
+  .main-content {
+    display: grid; /* Grid for content arrangement */
     grid-template-columns: 1fr;
   }
 
-  .information {
-    padding: 20px;
-    text-align: center;
-    margin: 0;
+  .additional-content {
+    display: none; /* Hide less essential content */
   }
 
-  .logo {
-    width: 30px; /* Adjust the width for smaller screens */
-    height: auto;
-    top: 10px;
-    left: 10px;
-  }
+  /* Other adjustments for compact layout */
+}
 
-  .form {
-    margin: 0px;
-  }
+@media (max-width: 768px) {
+  /* Styles for medium-sized screens */
+  /* Adjust layout and spacing as needed */
 }
